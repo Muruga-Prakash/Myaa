@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Announcement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="photo left">
+            <img src="your-photo.jpg" alt="Husband">
+        </div>
+        <div class="photo right">
+            <img src="wife-photo.jpg" alt="Wife">
+        </div>
+        <div class="content">
+            <h1>Guess the Surprise!</h1>
+            <div class="options">
+                <button onclick="announce('boy')">
+                    <img src="boy-icon.png" alt="Boy"> It's a Boy!
+                </button>
+                <button onclick="announce('girl')">
+                    <img src="girl-icon.png" alt="Girl"> It's a Girl!
+                </button>
+            </div>
+            <div id="message" class="hidden">
+                <h2 id="congrats-text"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
